@@ -1,68 +1,204 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <script src="https://kit.fontawesome.com/f1393e3e42.js" crossorigin="anonymous"></script>
-        <link href="style.css" rel="stylesheet">
-        <title>Ginalorie's Homepage</title>       
-       
-    </head>
-    <body>
-        <!-- <img src="images/Iso_3.jpg" alt="collageofapps" width="1440" height="500"> -->
-        <!-- <h1>Ginalorie C. Dionida</h1> -->
-        <!-- <a href="Iso_3.jpg"></a> -->
-       
+<!doctype html>
+<html lang="en">
 
-        <div class="about-me section" >
-          
-            <div>
-                <div>
-                    <h1>
-                        Ginalorie C. Dionida
-                    </h1>
-                    <img src="..." width="300" height="300"><br>
-                    
-                </div>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <p>
-                I am a UX/UI Designer from U.C. Berkeley. Received my Bachelor of Arts from <br/>
-                San Francisco State University.
-                <br/><br/>
-                I am firm and passionate believer in accomplishing the goals set forth and <br/>making sure the user does not encounter any difficult experiences.
-                <br/><br/>
-                I am a native San Franciscan, an avid runner, a mother to a Siberian Husky <br/>named Luna and two lovely boys.
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
 
-            </p>
+    <title>SF Races</title>
+  </head>
+  <body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+      <a class="navbar-brand" href="#"><img src="images/SFMarathon40.png">SF Races</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Events <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Races Near You</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">San Francisco Marathon</a>
+              <a href="https://www.thesfmarathon.com/"></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">The Giants Race</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Bay to Breakers</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary btn-lg navCTA" href="#" role="button">More Info</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End navigation bar -->
+
+    <!-- <div class="jumbotron jumbotron text-center">
+      <div class="container">
+        <h1 class="display-3">San Francisco</h1>
+        <p class="lead">This is a modified jumbotron that occupies
+                        the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+     -->
+     
+    <!-- Jumbotron -->
+    <div class="jumbotron rockBackground">
+      <div class="jumboCopy">
+        <h1 class="display-4">San Francisco! Let's Race!</h1>
+        <p class="lead">Ready to get more medal bling? Sign up and get ready to run!</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Register Here</a>
+      </div>
+    </div>
+    <!-- End jumbotron -->
+
+    <!-- Cards -->
+    <div class="container-fluid content">
+      <h2 class="sectionHeading">Races Near You</h2>
+      <div class="row showsNear">
+
+        <!-- Card 1 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card">
+            <img src="images/SFMJason.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">San Francisco Marathon</h5>
+              <p class="card-text">Come and run the Famous Marathon on the West Coast!</p>
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
         </div>
+        <!-- End card 1 -->
 
-
-<!-- This is the section for the Case Studies -->
-           <!-- <img src="images/cubby1.png" style="width:200px" height="400px"> -->
-           <!-- <img src="images/WT2 copy 2.png" style="width:100px" height="200px"> -->
-           <!-- <img src="images/SDA1 copy 2.png" style="width:200px" height="400px"> -->
-<!-- Use flexboxes -->
-        <div class="projectsGrid">
-            <div><img src="images/cubby1.png"></div>
-            <div><img src="images/SDA1 copy 2.png"></div>
-            <div><img src="images/FWS3 copy 2.png"></div>
-           
+        <!-- Card 2 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card">
+            <img src="images/B2BGee.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bay To Breakers</h5>
+              <p class="card-text">One of the most famous footraces in the nation and you can run it here in San Francisco and in costume.</p>
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
         </div>
+        <!-- End card 2 -->
 
-
-<!-- This is the section for the current project -->
-        <div class="currentprojectGrid">
-            <img src="skyline_gray.jpg">
-            <h1>
-                SFMTA Mobile Application
-            </h1>
-            
-            
-
+        <!-- Card 3 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card">
+            <img src="images/Giants2Jason.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Giants Race</h5>
+              <p class="card-text">The Giant Race Series is the perfect combination of running and baseball, and we hope you’ll join us in 2021.</p>
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
         </div>
+        <!-- End card 3 -->
+      </div>
+    </div>
+    <!-- End cards -->
 
+    <!-- Content -->
+    <!-- <div class="container-fluid content">
+      <h2 class="sectionHeading">Why we're better</h2> -->
 
+      <!-- Row 1 -->
+      <!-- <div class="row valueProp">
+        <div class="sideAccent">
+        </div>
+        <div class="imageContainer col-3">
+          <img src="images/assistance.png">
+        </div>
+        <div class="text col-8">
+          <h3>We are always here to help!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+          </p>
+          <a href="#" class="btn btn-primary">Contact Us
+          </a>
+        </div>
+      </div> -->
+      <!-- End row 1 -->
 
+      <!-- Row 2 -->
+      <!-- <div class="row valueProp">
+        <div class="sideAccent">
+        </div>
+        <div class="imageContainer col-3">
+          <img src="images/refund.png">
+        </div>
+        <div class="text col-8">
+          <h3>The best prices!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+          </p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div> -->
+      <!-- End row 2 -->
 
+      <!-- Row 3 -->
+      <!-- <div class="row valueProp">
+        <div class="sideAccent">
+        </div>
+        <div class="imageContainer col-3">
+          <img src="images/mail-box.png">
+        </div>
+        <div class="text col-8">
+          <h3>The best shows!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+          </p>
+          <a href="#" class="btn btn-primary">More shows</a>
+        </div>
+      </div> -->
+      <!-- End row 3 -->
 
+    </div>
+    <!-- End content -->
 
-    </body> 
+    <!-- Footer -->
+    <footer class="emailContain">
+      <form>
+        <h3 class="sectionHeading">Join Our Mailing List</h3>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </body>
+
 </html>
